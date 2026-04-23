@@ -53,9 +53,10 @@ def create_app():
 
     return app
 
+init_db()
+app = create_app()
+
 if __name__ == "__main__":
-    init_db()
     t = threading.Thread(target=_poll_gmail, daemon=True)
     t.start()
-    app = create_app()
     app.run(debug=False, port=5000)
