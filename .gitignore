@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+token.json
+credentials.json
+client_secret_*.json
+emails.db
+flask.log
+*.log

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking — Correos Comerciales</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>RANKING DE CORREOS COMERCIALES</h1>
+    <div class="header-right">
+      <button class="btn-clear" onclick="limpiarDB()">Limpiar board</button>
+      <div class="live-badge">
+        <span class="pulse"></span>
+        EN VIVO
+      </div>
+    </div>
+  </header>
+  <main id="board">
+    <div class="empty-state">Esperando correos...</div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
